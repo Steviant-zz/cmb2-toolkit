@@ -1,0 +1,15 @@
+'.text.html.php':
+  'CMB2 Time Picker':
+    'prefix': 'cmb_timepicker'
+    'body': '''
+
+$cmb->add_field( array(
+    'name'    => __( '${1:Field Name}', '${2:text_domain}' ),
+    'desc'    => __( '${3:Field Description (Optional)}', '${2:text_domain}' ),
+    'id'      => $prefix . '${4:field_id}',
+    'type'    => 'text_time'
+    // 'time_format' => 'h:i:s A',
+) );
+
+${0}
+'''

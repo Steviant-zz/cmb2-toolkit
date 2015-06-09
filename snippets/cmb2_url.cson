@@ -1,0 +1,13 @@
+'.text.html.php':
+  'CMB2 URL Field':
+    'prefix': 'cmb_url'
+    'body': '''
+$cmb->add_field( array(
+    'name' => __( '${1:Field Name}', '${2:text_domain}' ),
+    'id'   => $prefix . '${3:field_id}',
+    'type' => 'text_url',
+    ${4}// 'protocols' => array( 'http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet' ), // Array of allowed protocols
+) );
+
+${0}
+'''

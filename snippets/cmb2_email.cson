@@ -1,0 +1,12 @@
+'.text.html.php':
+  'CMB2 Email Field':
+    'prefix': 'cmb_email'
+    'body': '''
+$cmb->add_field( array(
+    'name' => __( '${1:Field Name}', '${2:text_domain}' ),
+    'id'   => $prefix . '${3:field_id}',
+    'type' => 'text_email',
+) );
+
+${0}
+'''

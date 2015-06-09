@@ -1,0 +1,15 @@
+'.text.html.php':
+  'CMB2 UNIX Timestamp':
+    'prefix': 'cmb_timestamp'
+    'body': '''
+$cmb->add_field( array(
+    'name'    => __( '${1:Field Name}', '${2:text_domain}' ),
+    'desc'    => __( '${3:Field Description (Optional)}', '${2:text_domain}' ),
+    'id'      => $prefix . '${4:field_id}',
+    'type'    => 'text_date_timestamp',
+    // 'timezone_meta_key' => '${5:timezone_field_id}',
+    // 'date_format' => 'l jS \of F Y',
+) );
+
+${0}
+'''

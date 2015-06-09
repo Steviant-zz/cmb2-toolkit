@@ -1,0 +1,14 @@
+'.text.html.php':
+  'CMB2 Money Field':
+    'prefix': 'cmb_money'
+    'body': '''
+$cmb->add_field( array(
+    'name' => __( '${1:Field Name}', '${2:text_domain}' ),
+    'desc' => __( '${3:Field Description (Optional)}', '${2:text_domain}' ),
+    'id'   => $prefix . '${4:field_id}',
+    'type' => 'text_money',
+    ${5}// 'before_field' => '${6:£}', // Replaces default '$'
+) );
+
+${0}
+'''

@@ -1,0 +1,13 @@
+'.text.html.php':
+  'CMB2 Text Field':
+    'prefix': 'cmb_text'
+    'body': '''
+$cmb->add_field( array(
+    'name'    => __( '${1:Field Name}', '${2:text_domain}' ),
+    'desc'    => __( '${3:Field Description (Optional)}', '${2:text_domain}' ),
+    'id'      => $prefix . '${4:field_id}',
+    'type'    => 'select_timezone',
+) );
+
+${0}
+'''

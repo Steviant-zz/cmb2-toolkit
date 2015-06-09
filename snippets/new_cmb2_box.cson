@@ -1,0 +1,22 @@
+'.text.html.php':
+  'New CMB2 Box':
+    'prefix': 'box'
+    'body': '''
+
+	function register_${1:title}_metabox() {
+		$prefix = '_${1:prefix}_';
+
+		$cmb = new_cmb2_box( array(
+			'id'            => $prefix . 'metabox',
+			'title'         => __( '${3:Title}', '${4:text_domain}' ),
+			'object_types'  => array( '${5:post_type}', ), // Post type
+			'context'       => '${6:normal}',
+			'priority'      => '${7:high}',
+			'show_names'    => true, // Show field names on the left
+			// 'cmb_styles' => false, // false to disable the CMB stylesheet
+			// 'closed'     => true, // true to keep the metabox closed by default
+		) );
+
+		${0}
+	}
+'''

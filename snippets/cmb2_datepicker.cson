@@ -1,0 +1,14 @@
+'.text.html.php':
+  'CMB2 Date Picker':
+    'prefix': 'cmb_datepicker'
+    'body': '''
+$cmb->add_field( array(
+    'name'    => __( '${1:Field Name}', '${2:text_domain}' ),
+    'desc'    => __( '${3:Field Description (Optional)}', '${2:text_domain}' ),
+    'id'      => $prefix . '${4:field_id}',
+    'type'    => 'text_date'
+    // 'date_format' => __( 'd-m-Y', '${2:text_domain}' ), // use European date format
+) );
+
+${0}
+'''
